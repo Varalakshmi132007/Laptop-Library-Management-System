@@ -1,122 +1,88 @@
 # 💻 Laptop Library Management System
 
-A web-based **Laptop Library Management System** designed to provide affordable access to laptops for students who may not have their own devices.
+A web-based Laptop Library Management System designed to help educational institutions provide affordable access to laptops for students who may not have their own devices.
 
-The system allows students to register, view available laptops, request/borrow a laptop, and track their borrowing period. Administrators can manage laptops, students, borrowing records, returns, and maintenance.
+The system manages laptops, students, borrowing, returns, maintenance, and usage records through a centralized platform.
 
 ---
 
-## 📌 Problem Statement
+## 📌 Project Overview
 
-Many students, especially those living in hostels or coming from financially constrained backgrounds, may not be able to afford a personal laptop.
+Many students, especially hostel students, may face difficulty accessing laptops for online classes, assignments, programming practice, and other academic activities.
 
-Lack of access to a laptop can make it difficult to:
+The Laptop Library Management System provides a structured solution where students can borrow available laptops for academic purposes for a fixed period of **3 days**.
 
-- Attend online classes
-- Complete assignments
-- Practice programming
-- Work on academic projects
-- Develop technical skills outside laboratory hours
-
-The Laptop Library provides a shared and organized system where students can borrow available laptops for academic purposes.
+The system allows administrators to manage laptops and students while keeping track of borrowing, return, maintenance, and laptop status.
 
 ---
 
 ## 🎯 Objectives
 
 - Provide affordable access to laptops for students.
-- Promote digital equality among students.
+- Support students who cannot afford a personal laptop.
 - Encourage programming and technical skill development.
-- Reuse donated or refurbished laptops.
-- Maintain organized laptop issue and return records.
-- Track laptop availability and maintenance.
-- Provide a simple web-based management system.
+- Promote reuse of donated and refurbished laptops.
+- Maintain digital records of laptop usage.
+- Simplify laptop issue and return management.
+- Track laptop maintenance and condition.
+- Reduce manual record keeping.
 
 ---
 
-## 🚀 Features
-
-### 👨‍🎓 Student
-
-- Student registration
-- Student login
-- View available laptops
-- Request a laptop
-- View currently borrowed laptop
-- Track return deadline
-- View borrowing history
-- View laptop details
+## ✨ Main Features
 
 ### 👨‍💼 Admin
 
 - Admin login
-- Dashboard
-- Add laptops
-- Update laptop information
-- View laptop availability
+- Admin dashboard
+- View all laptops
+- Add new laptops
+- Edit laptop details
+- Deactivate laptops
+- View laptop status
+- View laptop summary
+- Manage students
 - Issue laptops
 - Process laptop returns
-- View overdue laptops
-- Manage students
-- Track maintenance
+- Track overdue laptops
+- Manage maintenance records
 - View borrowing history
 - Generate reports
 
----
+### 👨‍🎓 Student
 
-## ⏳ Borrowing System
-
-Each student can have **only one active laptop** at a time.
-
-A laptop is issued for exactly **3 days from the date and time of issue**.
-
-### Example
-
-If a laptop is issued on:
-
-**21 September, 10:30 AM**
-
-The return deadline will be:
-
-**24 September, 10:30 AM**
-
-The system records the exact issue time and calculates the return deadline automatically.
-
-### Laptop Status
-
-- `AVAILABLE`
-- `ISSUED`
-- `MAINTENANCE`
-- `INACTIVE`
-
-### Borrowing Status
-
-- `ACTIVE`
-- `RETURNED`
-- `OVERDUE`
-- `CANCELLED`
+- Student registration/login
+- Student dashboard
+- View available laptops
+- Request a laptop
+- View currently borrowed laptop
+- View return deadline
+- Track borrowing status
+- View borrowing history
+- View notifications
+- Manage profile
 
 ---
 
-## 🏗️ System Architecture
+## 💻 Laptop Status
+
+Each laptop can have one of the following statuses:
+
+| Status | Meaning |
+|---|---|
+| `AVAILABLE` | Laptop can be issued |
+| `ISSUED` | Currently borrowed by a student |
+| `MAINTENANCE` | Under repair or maintenance |
+| `INACTIVE` | No longer available for use |
+
+---
+
+## ⏱️ Borrowing System
+
+The system uses a **3-day borrowing period**.
+
+For example:
 
 ```text
-Student / Admin
-       │
-       ▼
-   Web Interface
-       │
-       ▼
- React Frontend
-       │
-       ▼
- Node.js + Express Backend
-       │
-       ▼
-     MySQL
-       │
-       ├── Students
-       ├── Users
-       ├── Laptops
-       ├── Borrowings
-       └── Maintenance
+Issue Date & Time : September 21, 10:30 AM
+Return Deadline   : September 24, 10:30 AM

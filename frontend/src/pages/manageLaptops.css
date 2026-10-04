@@ -1,0 +1,697 @@
+/* =========================================
+   MANAGE LAPTOPS
+========================================= */
+
+.laptops-page {
+    min-height: 100vh;
+    width: 100%;
+
+    background: #f1f5f9;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.laptops-main {
+    box-sizing: border-box;
+
+    width: calc(100% - 234px);
+
+    margin-left: 234px;
+
+    min-height: 100vh;
+
+    padding: 30px 32px 50px;
+
+    background: #f1f5f9;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.laptops-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+}
+
+.laptops-header h1 {
+    margin: 0 0 8px;
+
+    font-size: 36px;
+
+    color: #102a56;
+}
+
+.laptops-header p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.laptops-logout {
+    flex-shrink: 0;
+
+    padding: 11px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #dc2626;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.laptops-logout:hover {
+    background: #b91c1c;
+}
+
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.laptops-add-btn {
+    padding: 12px 20px;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.laptops-add-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.laptops-form-card {
+    background: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 5px 15px rgba(15, 23, 42, 0.07);
+}
+
+.laptops-form-card h2 {
+    margin: 0 0 20px;
+
+    color: #102a56;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.laptops-form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.laptops-form-grid input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px 13px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.laptops-form-grid input:focus {
+    border-color: #2563eb;
+}
+
+
+/* =========================================
+   FORM BUTTONS
+========================================= */
+
+.laptops-form-buttons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.laptops-submit-btn,
+.laptops-cancel-btn {
+    padding: 11px 18px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.laptops-submit-btn {
+    background: #2563eb;
+
+    color: white;
+}
+
+.laptops-cancel-btn {
+    background: #64748b;
+
+    color: white;
+}
+
+
+/* =========================================
+   FILTER CARD
+========================================= */
+
+.laptops-filter-card {
+    background: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 5px 15px rgba(15, 23, 42, 0.07);
+}
+
+.laptops-filter-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+.laptops-filter-header h2 {
+    margin: 0 0 6px;
+
+    color: #102a56;
+
+    font-size: 23px;
+}
+
+.laptops-filter-header p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.laptops-clear-btn {
+    flex-shrink: 0;
+
+    padding: 11px 16px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #64748b;
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   FILTER ROW
+========================================= */
+
+.laptops-filter-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.laptops-search-box {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    padding: 0 14px;
+
+    min-width: 0;
+}
+
+.laptops-search-box span {
+    font-size: 18px;
+}
+
+.laptops-search-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    padding: 13px 0;
+
+    font-size: 14px;
+}
+
+.laptops-status-label {
+    font-weight: 700;
+
+    color: #334155;
+}
+
+.laptops-filter-row select {
+    width: 160px;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #334155;
+}
+
+
+/* =========================================
+   COUNT
+========================================= */
+
+.laptops-count {
+    margin: 15px 0 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   TABLE CARD
+========================================= */
+
+.laptops-table-card {
+    background: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+
+    padding: 27px;
+
+    box-shadow:
+        0 5px 15px rgba(15, 23, 42, 0.07);
+}
+
+.laptops-table-card h2 {
+    margin: 0 0 20px;
+
+    color: #102a56;
+
+    font-size: 24px;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.laptops-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.laptops-table {
+    width: 100%;
+
+    min-width: 1150px;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+}
+
+.laptops-table th {
+    padding: 14px 12px;
+
+    text-align: left;
+
+    background: #f1f5f9;
+
+    color: #102a56;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid #cbd5e1;
+
+    white-space: nowrap;
+}
+
+.laptops-table td {
+    padding: 14px 12px;
+
+    color: #172b4d;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    white-space: nowrap;
+}
+
+.laptops-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.laptops-status {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.laptops-status-available {
+    background: #d9fbe7;
+
+    color: #087a3d;
+}
+
+.laptops-status-issued {
+    background: #dbeafe;
+
+    color: #1d4ed8;
+}
+
+.laptops-status-maintenance {
+    background: #fef3c7;
+
+    color: #92400e;
+}
+
+.laptops-status-inactive {
+    background: #fee2e2;
+
+    color: #b91c1c;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.laptops-action-buttons {
+    display: flex;
+
+    gap: 7px;
+}
+
+.laptops-edit-btn,
+.laptops-deactivate-btn {
+    border: none;
+
+    border-radius: 6px;
+
+    padding: 8px 12px;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.laptops-edit-btn {
+    background: #2563eb;
+}
+
+.laptops-deactivate-btn {
+    background: #dc2626;
+}
+
+.laptops-edit-btn:hover {
+    background: #1d4ed8;
+}
+
+.laptops-deactivate-btn:hover {
+    background: #b91c1c;
+}
+
+
+/* =========================================
+   NO RESULTS
+========================================= */
+
+.laptops-no-results {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    color: #64748b;
+}
+
+.laptops-no-results > div {
+    font-size: 40px;
+}
+
+.laptops-no-results h3 {
+    margin: 12px 0 5px;
+
+    color: #334155;
+}
+
+.laptops-no-results p {
+    margin: 0 0 15px;
+}
+
+.laptops-no-results button {
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 10px 16px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.laptops-loading {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #102a56;
+
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1199px) {
+
+    .laptops-main {
+        width: calc(100% - 234px);
+
+        margin-left: 234px;
+
+        padding: 25px;
+    }
+
+    .laptops-form-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 599px) {
+
+    .laptops-main {
+        width: calc(100% - 60px);
+
+        margin-left: 60px;
+
+        padding: 20px 14px 40px;
+    }
+
+    .laptops-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .laptops-header h1 {
+        font-size: 28px;
+    }
+
+    .laptops-logout {
+        align-self: flex-start;
+    }
+
+    .laptops-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .laptops-filter-header {
+        flex-direction: column;
+    }
+
+    .laptops-filter-row {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .laptops-status-label {
+        margin-top: 5px;
+    }
+
+    .laptops-filter-row select {
+        width: 100%;
+    }
+
+    .laptops-table-card,
+    .laptops-filter-card,
+    .laptops-form-card {
+        padding: 18px;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 399px) {
+
+    .laptops-main {
+        width: calc(100% - 56px);
+
+        margin-left: 56px;
+
+        padding: 18px 10px 35px;
+    }
+
+    .laptops-header h1 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,29 @@
+/* =========================================
+   APPLICATION GLOBAL CSS
+========================================= */
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* Remove default spacing */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+
+/* Prevent horizontal page overflow */
+
+html,
+body {
+    overflow-x: hidden;
+}

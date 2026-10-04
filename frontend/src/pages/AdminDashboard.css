@@ -1,0 +1,353 @@
+/* =========================================
+   ADMIN DASHBOARD
+========================================= */
+
+.dashboard-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #f3f6fa;
+}
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.dashboard-main {
+    width: calc(100% - 234px);
+
+    margin-left: 234px;
+
+    min-height: 100vh;
+
+    padding: 32px 38px;
+
+    background: #f3f6fa;
+
+    box-sizing: border-box;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.dashboard-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+
+    font-size: 36px;
+
+    color: #172033;
+}
+
+.dashboard-header p {
+    margin: 8px 0 0;
+
+    font-size: 16px;
+
+    color: #64748b;
+}
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.dashboard-logout {
+    border: none;
+
+    background: #dc2626;
+
+    color: #ffffff;
+
+    padding: 11px 21px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    flex-shrink: 0;
+}
+
+.dashboard-logout:hover {
+    background: #b91c1c;
+}
+
+/* =========================================
+   SUMMARY CARDS
+========================================= */
+
+.dashboard-summary-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+
+    margin-bottom: 32px;
+}
+
+.dashboard-summary-card {
+    min-height: 118px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    box-shadow:
+        0 6px 18px rgba(15, 23, 42, 0.07);
+}
+
+.dashboard-summary-card h3 {
+    margin: 0 0 10px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #64748b;
+}
+
+.dashboard-summary-number {
+    font-size: 38px;
+
+    font-weight: 700;
+
+    color: #0f346c;
+}
+
+/* =========================================
+   REQUEST SECTION
+========================================= */
+
+.dashboard-request-section {
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 15px;
+
+    padding: 26px 30px;
+
+    box-shadow:
+        0 6px 18px rgba(15, 23, 42, 0.07);
+
+    overflow: hidden;
+}
+
+.dashboard-request-section h2 {
+    margin: 0 0 20px;
+
+    font-size: 25px;
+
+    color: #0f346c;
+}
+
+/* =========================================
+   TABLE
+========================================= */
+
+.dashboard-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.dashboard-request-table {
+    width: 100%;
+
+    min-width: 700px;
+
+    border-collapse: collapse;
+
+    font-size: 15px;
+}
+
+.dashboard-request-table th {
+    background: #f1f5f9;
+
+    color: #173b6c;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    padding: 14px 16px;
+
+    border-bottom: 1px solid #dbe3ec;
+}
+
+.dashboard-request-table td {
+    padding: 15px 16px;
+
+    border-bottom: 1px solid #e5eaf0;
+
+    color: #172033;
+}
+
+.dashboard-request-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================================
+   STATUS
+========================================= */
+
+.dashboard-status {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 7px 15px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.dashboard-status-approved {
+    background: #dcfce7;
+
+    color: #15803d;
+}
+
+.dashboard-status-rejected {
+    background: #fee2e2;
+
+    color: #b91c1c;
+}
+
+.dashboard-status-pending {
+    background: #fef3c7;
+
+    color: #a16207;
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.dashboard-loading {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #64748b;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 600px) and (max-width: 1199px) {
+
+    .dashboard-main {
+        width: calc(100% - 220px);
+
+        margin-left: 220px;
+
+        padding: 28px 24px;
+    }
+
+    .dashboard-summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .dashboard-header h1 {
+        font-size: 32px;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 599px) {
+
+    .dashboard-main {
+        width: calc(100% - 60px);
+
+        margin-left: 60px;
+
+        padding: 20px 14px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        margin-bottom: 22px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 27px;
+    }
+
+    .dashboard-header p {
+        font-size: 14px;
+    }
+
+    .dashboard-logout {
+        align-self: flex-start;
+    }
+
+    .dashboard-summary-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+    .dashboard-summary-card {
+        min-height: 105px;
+    }
+
+    .dashboard-request-section {
+        padding: 20px 14px;
+    }
+
+    .dashboard-request-section h2 {
+        font-size: 21px;
+    }
+}
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 399px) {
+
+    .dashboard-main {
+        width: calc(100% - 56px);
+
+        margin-left: 56px;
+
+        padding: 18px 10px;
+    }
+}

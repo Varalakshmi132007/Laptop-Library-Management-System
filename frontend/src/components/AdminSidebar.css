@@ -1,0 +1,277 @@
+/* =========================================
+   ADMIN SIDEBAR
+========================================= */
+
+.common-admin-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 234px;
+    height: 100vh;
+
+    background: #1f2937;
+    color: #ffffff;
+
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   SIDEBAR LOGO
+========================================= */
+
+.common-sidebar-logo {
+    height: 82px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 28px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+    flex-shrink: 0;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+.sidebar-logo-full {
+    display: inline;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+.sidebar-logo-mobile {
+    display: none;
+}
+
+
+/* =========================================
+   SIDEBAR MENU
+========================================= */
+
+.common-sidebar-menu {
+    width: 100%;
+
+    padding: 18px 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   SIDEBAR OPTION
+========================================= */
+
+.common-sidebar-link {
+    width: 100%;
+    min-height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 18px;
+
+    border-radius: 9px;
+
+    /* Normal options */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+
+    /* Button reset */
+    border: none;
+    background: transparent;
+
+    text-align: left;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        font-weight 0.2s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.common-sidebar-link:hover {
+    background: #374151;
+    color: #ffffff;
+
+    font-weight: 400;
+}
+
+
+/* =========================================
+   ACTIVE / SELECTED OPTION
+========================================= */
+
+.common-sidebar-link.active {
+    background: #2563eb;
+    color: #ffffff;
+
+    /* Selected option is bold */
+    font-weight: 700;
+}
+
+
+/* =========================================
+   ACTIVE OPTION HOVER
+========================================= */
+
+.common-sidebar-link.active:hover {
+    background: #2563eb;
+    color: #ffffff;
+
+    /* Keep selected option bold */
+    font-weight: 700;
+}
+
+
+/* =========================================
+   SIDEBAR ICON
+========================================= */
+
+.common-sidebar-icon {
+    width: 30px;
+    min-width: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+
+    margin-right: 10px;
+}
+
+
+/* =========================================
+   SIDEBAR TEXT
+========================================= */
+
+.common-sidebar-text {
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 600px) and (max-width: 1199px) {
+
+    .common-admin-sidebar {
+        width: 220px;
+    }
+
+    .common-sidebar-logo {
+        padding: 0 22px;
+    }
+
+    .common-sidebar-link {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 599px) {
+
+    .common-admin-sidebar {
+        width: 60px;
+    }
+
+    .common-sidebar-logo {
+        height: 70px;
+
+        padding: 0;
+
+        justify-content: center;
+    }
+
+    .sidebar-logo-full {
+        display: none;
+    }
+
+    .sidebar-logo-mobile {
+        display: inline;
+
+        font-size: 22px;
+    }
+
+    .common-sidebar-menu {
+        padding: 15px 7px;
+        gap: 7px;
+    }
+
+    .common-sidebar-link {
+        width: 46px;
+        min-height: 48px;
+
+        padding: 0;
+
+        justify-content: center;
+
+        border-radius: 8px;
+    }
+
+    .common-sidebar-icon {
+        width: auto;
+        min-width: auto;
+
+        margin: 0;
+
+        font-size: 18px;
+    }
+
+    .common-sidebar-text {
+        display: none;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 399px) {
+
+    .common-admin-sidebar {
+        width: 56px;
+    }
+
+    .common-sidebar-link {
+        width: 42px;
+    }
+}

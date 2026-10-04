@@ -1,0 +1,85 @@
+/* =========================================
+   GLOBAL RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f6fa;
+}
+
+body {
+    min-height: 100vh;
+    background: #f3f6fa;
+    color: #172033;
+}
+
+/* Remove Vite starter layout */
+#root {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border: none;
+    text-align: left;
+    min-height: 100vh;
+}
+
+/* =========================================
+   COMMON ELEMENTS
+========================================= */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+}
+
+/* =========================================
+   PAGE BACKGROUND
+========================================= */
+
+body {
+    background: #f3f6fa;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 599px) {
+    html,
+    body,
+    #root {
+        width: 100%;
+        min-width: 0;
+    }
+}

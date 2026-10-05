@@ -180,6 +180,32 @@ The administrator dashboard provides an overview of the system, including inform
 
 ---
 
+## 📸 Screenshots
+
+### 🔐 Login Page
+
+![Login Page](screenshots/login.png)
+
+### 👨‍💼 Admin Dashboard
+
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+### 👨‍🎓 Student Dashboard
+
+![Student Dashboard](screenshots/student-dashboard.png)
+
+### 💻 Manage Laptops
+
+![Manage Laptops](screenshots/manage-laptops.png)
+
+### 👥 Manage Students
+
+![Manage Students](screenshots/manage-students.png)
+
+### 📋 Manage Requests
+
+![Manage Requests](screenshots/manage-requests.png)
+
 ## 📁 Project Structure
 
 ```text

@@ -192,11 +192,11 @@ The administrator dashboard provides an overview of the system, including inform
 
 ### 👨‍🎓 Student Dashboard
 
-![Student Dashboard](screenshots/Student-dashboard.png)
+![Student Dashboard](screenshots/Student-Dashboard.png)
 
 ### 💻 Manage Laptops
 
-![Manage Laptops](screenshots/manage-laptops.png)
+![Manage Laptops](screenshots/manage-laptop.png)
 
 ### 👥 Manage Students
 
